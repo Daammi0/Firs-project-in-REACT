@@ -1,3 +1,5 @@
+//funcion que desordena el array
+
 export function shuffle(arr){
     let arr2= []
     while (arr.length > 0){

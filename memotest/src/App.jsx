@@ -1,8 +1,14 @@
-function App() {
+import { Card } from "./card/Card"
+import { Grid } from "./grid/grid"
+import "./App.css"
+import { shuffle } from "./funciones/shuffle"
 
+function App() {
   return (
     <>
-      <h1>hola</h1>
+      <div className="centrar">
+        <Grid></Grid>
+      </div>
     </>
   )
 }

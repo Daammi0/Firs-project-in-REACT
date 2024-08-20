@@ -1,0 +1,6 @@
+.grid-memotest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    width: 70%;
+}

@@ -1,14 +1,20 @@
-import { Card } from "./card/Card"
 import { Grid } from "./grid/grid"
 import "./App.css"
-import { shuffle } from "./funciones/shuffle"
 
+import { createContext, useEffect, useState } from "react"
+
+export const Contexto1 = createContext(null);
 function App() {
+
+  const [ultimoMostrado, setUltimoMostrado] = useState(null)
+
   return (
     <>
-      <div className="centrar">
-        <Grid></Grid>
-      </div>
+      <Contexto1.Provider value={[ultimoMostrado, setUltimoMostrado]}>
+        <div className="centrar">
+          <Grid/>
+        </div>
+      </Contexto1.Provider>
     </>
   )
 }

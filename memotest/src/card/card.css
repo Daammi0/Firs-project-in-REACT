@@ -1,3 +1,8 @@
-.card-memotest{
-    width: 100%;
+.card-memotest[data-show="false"]{
+    filter: brightness(0);
 }
+
+.card-memotest:hover[data-show="true"]{
+    filter: brightness(100);
+}
+
